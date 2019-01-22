@@ -50,14 +50,14 @@ Run the database seeder
 
 Run the all other seeder
 
-  php artisan db:seed --class=ConferenceFeaturesSeeder
-  php artisan db:seed --class=ConferenceFormSeeder
-  php artisan db:seed --class=BeaconUUIDSeeder
-  php artisan db:seed --class=AppMenuConfTableSeeder
+   php artisan db:seed --class=ConferenceFeaturesSeeder
+   php artisan db:seed --class=ConferenceFormSeeder
+   php artisan db:seed --class=BeaconUUIDSeeder
+   php artisan db:seed --class=AppMenuConfTableSeeder
 
 To create default folder
 
-  php artisan folder:create
+   php artisan folder:create
 
 Start the local development server
 
