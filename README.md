@@ -48,9 +48,16 @@ Run the database seeder
 
    php artisan db:seed
 
-Run the Feature seeder
+Run the all other seeder
 
   php artisan db:seed --class=ConferenceFeaturesSeeder
+  php artisan db:seed --class=ConferenceFormSeeder
+  php artisan db:seed --class=BeaconUUIDSeeder
+  php artisan db:seed --class=AppMenuConfTableSeeder
+
+To create default folder
+
+  php artisan folder:create
 
 Start the local development server
 
@@ -65,6 +72,7 @@ You can now access the server at http://127.0.0.1:8000
     composer install
     composer update
     cp .env.example .env
+    php artisan folder:create
     php artisan key:generate
     
 **Make sure you set the correct database connection information before running the migrations** [Environment variables](#environment-variables)
@@ -72,6 +80,7 @@ You can now access the server at http://127.0.0.1:8000
     php artisan migrate
     php artisan db:seed
     php artisan db:seed --class=ConferenceFeaturesSeeder
+    php artisan db:seed --class=ConferenceFormSeeder
     php artisan serve
 
 ## Database seeding
@@ -96,7 +105,11 @@ Run the database seeder and you're done
 ## Steps to add Delegate
 
 1. Login with user_id "super_admin@venu-iq.com" and password "super_admin@123"
-2. 
+2. Add Client with unique email id, password and futher details.
+3. Assign Package with feature enabled "Delegate".
+4. Send email to access the package.
+5. By login through client credentials or by admin panel you can add conference.
+6. By adding Conference now you can add delegate too. 
 
 ----------
 ## Contributors
