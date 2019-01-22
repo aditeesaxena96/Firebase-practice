@@ -81,6 +81,8 @@ You can now access the server at http://127.0.0.1:8000
     php artisan db:seed
     php artisan db:seed --class=ConferenceFeaturesSeeder
     php artisan db:seed --class=ConferenceFormSeeder
+    php artisan db:seed --class=BeaconUUIDSeeder
+    php artisan db:seed --class=AppMenuConfTableSeeder
     php artisan serve
 
 ## Database seeding
