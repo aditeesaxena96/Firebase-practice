@@ -46,18 +46,18 @@ Run the database migrations (**Set the database connection in .env before migrat
 
 Run the database seeder
 
-   php artisan db:seed
+    php artisan db:seed
 
 Run the all other seeder
 
-   php artisan db:seed --class=ConferenceFeaturesSeeder
-   php artisan db:seed --class=ConferenceFormSeeder
-   php artisan db:seed --class=BeaconUUIDSeeder
-   php artisan db:seed --class=AppMenuConfTableSeeder
+    php artisan db:seed --class=ConferenceFeaturesSeeder
+    php artisan db:seed --class=ConferenceFormSeeder
+    php artisan db:seed --class=BeaconUUIDSeeder
+    php artisan db:seed --class=AppMenuConfTableSeeder
 
 To create default folder
 
-   php artisan folder:create
+    php artisan folder:create
 
 Start the local development server
 
