@@ -1,6 +1,5 @@
 # ![VenuIq](logo.png)
 
-
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
 [![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
 [![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
@@ -14,9 +13,9 @@
 
 Please install following server requirements before you start.
    
-   laravel 5.3
-   php 7.0
-   mysql 5.7
+   laravel 5.3,
+   php 7.0,
+   mysql 5.7,
    All php extension which needed for laravel
 
 
@@ -45,9 +44,13 @@ Run the database migrations (**Set the database connection in .env before migrat
 
     php artisan migrate
 
-Run the databse seeder
+Run the database seeder
 
    php artisan db:seed
+
+Run the Feature seeder
+
+  php artisan db:seed --class=ConferenceFeaturesSeeder
 
 Start the local development server
 
@@ -68,6 +71,7 @@ You can now access the server at http://127.0.0.1:8000
 
     php artisan migrate
     php artisan db:seed
+    php artisan db:seed --class=ConferenceFeaturesSeeder
     php artisan serve
 
 ## Database seeding
@@ -89,9 +93,11 @@ Run the database seeder and you're done
 ***Note*** : You can quickly set the database information and other variables in this file and have the application fully working.
 
 ----------
+## Steps to add Delegate
 
+1. Login with user_id "super_admin@venu-iq.com" and password "super_admin@123"
+2. 
+
+----------
 ## Contributors
-Mahesh Salaria
-Pavnish Kumar
-Chandan Kumar Jha
-Aditee Saxena
+Pavnish Kumar 
